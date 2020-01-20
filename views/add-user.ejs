@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add user</title>
+    <style>
+        body{
+            margin:0px;
+            padding : 0px;
+        }
+        a{
+            color:blue;
+            margin : 0px 5px;
+        }
+        header{
+            background-color: gray;
+            padding:20px
+        }
+        section{
+            margin : 10px;
+        }
+        .form-data{
+            margin : 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="/">User List</a>
+           <a href="/add-user">Add new</a>
+           
+        </nav>
+    </header>
+   <section>
+   <form action="/new-user" method="POST">
+    <div class="form-data">
+         <label>First name :</label>
+         <input type="text" name="first_name" />
+    </div>
+    <div class="form-data">
+        <label>Last name : </label>
+        <input type="text" name="last_name" />
+    </div>
+    <div class="form-data">
+        <label>Email : </label>
+        <input type="text" name="email" />
+    </div>
+    <div class="form-data">
+    <button>Add New  </button>
+    </div>
+   </form> 
+</section>   
+</body>
+</html>
